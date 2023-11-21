@@ -19,19 +19,21 @@
     svg {
       width: 20%;
       height: auto;
-      stroke-dasharray: 5000;
-      stroke-dashoffset: 5000;
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
       stroke: #d0d0d0;
-      fill: #7e7e7e;
-      animation: draw 4s linear forwards;
+      fill: #a9a9a9;
+      animation: draw 6s linear forwards;
       stroke-linecap: round;
 
     }
 
     @keyframes draw {
       to {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 0;
+        stroke-dasharray: 1000 1000 1000;
+        stroke-dashoffset: 6000;
+        stroke-linecap: round;
+        stroke: #000000da;
       }
     }
   </style>
@@ -43,7 +45,7 @@
       <style>
         .cls-1,
         .cls-2 {
-          animation: colorChange 2s linear forwards;
+          animation: colorChange 4s linear forwards;
           stroke-linecap: round;
 
         }
@@ -54,7 +56,7 @@
           to {
             stroke-width: 4px;
             stroke-linecap: round;
-            fill: #161616da;
+            fill: #000000da;
 
 
           }
