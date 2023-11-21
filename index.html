@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -18,46 +19,45 @@
     svg {
       width: 20%;
       height: auto;
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-      stroke: #888888;
-      animation: draw 3s linear forwards;
-      stroke-width: 4 px;
+      stroke-dasharray: 9000;
+      stroke-dashoffset: 9000;
+      stroke: #d0d0d0;
+      fill: #7e7e7e;
+      animation: draw 8s linear forwards;
+      stroke-linecap: round;
 
     }
 
     @keyframes draw {
       to {
-        stroke-dashoffset: 0;
+
+        stroke-dashoffset: 1000;
       }
-    }
-
-    .cls-1 {
-      fill: #2c2c2c;
-      stroke: #7a7a7a;
-      stroke-miterlimit: 10;
-      stroke-width: 2px
-    }
-
-    .cls-2 {
-      opacity: .84;
     }
   </style>
 </head>
 
 <body>
+  wait(3);
   <svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 562.1 630.24">
     <defs>
       <style>
         .cls-1,
         .cls-2 {
-          animation: colorChange 3s linear forwards;
+          animation: colorChange 2s linear forwards;
+          stroke-linecap: round;
+
         }
+
+
 
         @keyframes colorChange {
           to {
             stroke-width: 4px;
-            fill: #3c3c3c;
+            stroke-linecap: round;
+            fill: #161616da;
+
+
           }
         }
       </style>
