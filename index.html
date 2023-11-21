@@ -20,9 +20,10 @@
       height: auto;
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      stroke: #ffffff;
+      stroke: #888888;
       animation: draw 3s linear forwards;
-      stroke-width: 10 px;
+      stroke-width: 4 px;
+
     }
 
     @keyframes draw {
@@ -32,14 +33,14 @@
     }
 
     .cls-1 {
-      fill: #565656;
-      stroke: #595959;
+      fill: #2c2c2c;
+      stroke: #7a7a7a;
       stroke-miterlimit: 10;
-      stroke-width: 4px
+      stroke-width: 2px
     }
 
     .cls-2 {
-      opacity: .74;
+      opacity: .84;
     }
   </style>
 </head>
@@ -50,14 +51,13 @@
       <style>
         .cls-1,
         .cls-2 {
-          animation: colorChange 2s linear forwards;
+          animation: colorChange 3s linear forwards;
         }
 
         @keyframes colorChange {
           to {
             stroke-width: 4px;
-            fill: #000000;
-            stroke: #676767;
+            fill: #3c3c3c;
           }
         }
       </style>
